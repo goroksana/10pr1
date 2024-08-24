@@ -1,0 +1,19 @@
+<!-- <div *ngFor="let new of news">
+  <h2>{{new.title}}</h2>
+  <p>{{new.description}}</p>
+
+  <p>{{new.date|date:"longDate"}}</p>
+
+  <img src="{{new.image}}"/>
+
+
+</div> -->
+<div class="news-container">
+  <div class="news-item" *ngFor="let new of news">
+    <h2 class="news-title">{{ new.title }}</h2>
+    <p class="news-description">{{ new.description }}</p>
+    <p class="news-date">{{ new.date | date: 'longDate' }}</p>
+    <img class="news-image" src="{{ new.image }}" alt="{{ new.title }}" />
+  </div>
+</div>
+
